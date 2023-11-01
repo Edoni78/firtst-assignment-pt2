@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "bold";
+    src: url('../../assets/fonts/DMSans_18pt-Bold.woff');
+}
+@font-face {
+    font-family: "medium";
+    src: url('../../assets/fonts/DMSans_18pt-Medium.woff');
+}
+@font-face {
+    font-family: "regular";
+    src: url('../../assets/fonts/DMSans_18pt-Regular.woff');
+}
+
+h3{
+    font-family: "bold";
+    font-size: max(15px,1vw);
+}
+p,a{
+    font-family: "regular";
+    font-size: max(14px,0.5vw);
+}
+
+.container{
+    padding: 2% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: max(30px,2.5vw);
+    justify-content: center;
+    width: 80%;
+
+}
+
+.rate p{
+    font-family: "bold";
+}
+
+.card{
+    gap: max(30px,2.5vw);
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    padding: 2% 1%;
+    border: 1px solid #3d3d3d;
+    border-radius: max(10px,0.4vw);
+}
+
+.cardUp-container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: max(25px,1vw);
+}
+
+
+.cardUp-container button{
+    /* width: max(100px, 5vw); */
+    display: inline-block;
+    border-radius: max(10px,0.4vw);
+    border: none;
+    color: #ffffff;
+    padding: 4px 20px;
+}
+
+.img{
+    /* content: url('USA.png'); */
+    width: max(30px,1.5vw);
+    height: max(30px,1.5vw);
+}
+.img-holder{
+    display: flex;
+    align-items: center;
+    gap: max(20px,1vw);
+}
+
+.card-link a{
+    text-decoration: none;
+    border: 2px solid lightblue;
+    width: max(150px,3vw);
+    height: max(40px,1vw);
+    border-radius: max(20px,2vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightblue;
+}
+
+.card-link{
+    display: flex;
+    flex: 1;
+    align-items: end;
+}
+
+.cardDown-container{
+    display: flex;
+    flex-direction: column;
+    gap: max(20px,1vw);
+    flex: 1;
+}
+
+@media screen and (max-width:1160px) {
+    .card{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:1060px) {
+    .card{
+        width: 40%;
+    }
+    .cards{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:840px) {
+    .card{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:725px) {
+    .card{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:677px) {
+    .card{
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .card{
+        width: 90%;
+    }
+}

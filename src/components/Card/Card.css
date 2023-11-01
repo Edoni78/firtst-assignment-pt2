@@ -111,6 +111,7 @@ p,a{
 @media screen and (max-width:1160px) {
     .card{
         width: 35%;
+        padding: 3%;
     }
 }
 
@@ -126,6 +127,7 @@ p,a{
 @media screen and (max-width:840px) {
     .card{
         width: 45%;
+        padding: 3%;
     }
 }
 
